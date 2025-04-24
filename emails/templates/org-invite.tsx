@@ -55,7 +55,7 @@ export const Template = ({ locale, t }: TemplateProps) => {
         width={200}
         align={isRTL ? "right" : "left"}
         height={40}
-        backgroundColor="#5e6ad2"
+        backgroundColor="#EC1313"
         borderRadius={3}
         textColor="#fff"
         fontSize={15}

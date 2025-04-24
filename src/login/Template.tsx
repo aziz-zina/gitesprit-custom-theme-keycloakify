@@ -117,7 +117,6 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                                 </DropdownMenu>
                             </div>
                         )}
-                        <ModeToggle i18n={i18n} />
                     </div>
 
                 </div>

@@ -59,7 +59,7 @@ const sectionBorder = {
 };
 
 const sectionCenter = {
-  borderBottom: '1px solid rgb(145,71,255)',
+  borderBottom: '1px solid #EC1313',
   width: '102px'
 };
 
@@ -91,7 +91,7 @@ export const EmailLayout = ({
       <Body style={main}>
         <Container style={container}>
           <Section style={logo}>
-            <Img width={200} src="https://res.cloudinary.com/dyo9yeeck/image/upload/v1738352235/plutj3dm2hposbgpy4i6.png" />
+            <Img width={200} src="https://res.cloudinary.com/dfzg86obi/image/upload/v1745527245/companylogo_qtfqb0.png" />
           </Section>
 
           <Section style={sectionsBorders}>

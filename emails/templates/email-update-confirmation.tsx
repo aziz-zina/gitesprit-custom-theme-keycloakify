@@ -49,7 +49,7 @@ export const Template = ({ locale, t }: TemplateProps) => {
       <Button
         width={200}
         height={40}
-        backgroundColor="#5e6ad2"
+        backgroundColor="#EC1313"
         borderRadius={3}
         textColor="#fff"
         align={isRTL ? "right" : "left"}

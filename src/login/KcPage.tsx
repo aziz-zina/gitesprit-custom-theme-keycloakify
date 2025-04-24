@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/components/theme-provider";
+
 import type { ClassKey } from "keycloakify/login";
 import DefaultPage from "keycloakify/login/DefaultPage";
 import { Suspense, lazy } from "react";
@@ -6,7 +6,6 @@ import type { KcContext } from "./KcContext";
 import Template from "./Template";
 import { useI18n } from "./i18n";
 import "./index.css";
-import { getIsDarkMode } from "./shared/isDarkMode";
 
 const UserProfileFormFields = lazy(() => import("./UserProfileFormFields"));
 const Login = lazy(() => import("./pages/Login"));
@@ -64,7 +63,7 @@ export default function KcPage(props: { kcContext: KcContext }) {
     const { i18n } = useI18n({ kcContext });
 
     return (
-        <ThemeProvider defaultTheme={getIsDarkMode() ? "dark" : "light"} storageKey="isDarkMode">
+        // <ThemeProvider defaultTheme={getIsDarkMode() ? "dark" : "light"} storageKey="isDarkMode">
             <Suspense>
                 {(() => {
                     switch (kcContext.pageId) {
@@ -378,7 +377,7 @@ export default function KcPage(props: { kcContext: KcContext }) {
                     }
                 })()}
             </Suspense>
-        </ThemeProvider>
+        // </ThemeProvider>
 
     );
 }
